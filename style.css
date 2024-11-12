@@ -23,51 +23,35 @@ body {
     animation: fadeIn 1.5s ease-in;
 }
 
-/* Section Titles */
+/* Section Title */
 .section-title {
     font-size: 1.8em;
     color: #007bff;
-    margin: 20px 0 10px;
+    margin-bottom: 15px;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
 }
 
-/* Skills and Education List Styling */
-.skills-list, .education-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
+/* Education Item Styling */
+.education-item {
+    margin-bottom: 20px;
 }
 
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
+.education-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-.skills-list li, .education-list li {
-    font-size: 1.1em;
-    margin: 5px;
-    padding: 8px 15px;
-    border-radius: 15px;
-    transition: background 0.3s ease;
-}
-
-.skills-list li {
-    background: #007bff;
-    color: #fff;
-}
-
-.skills-list li:hover {
-    background: #0056b3;
-}
-
-.education-list li {
+.education-item span, .education-item p {
+    display: block;
+    font-size: 1em;
+    color: #666;
     padding-left: 10px;
     border-left: 3px solid #007bff;
-    background: none;
-    color: #333;
-    margin-bottom: 10px;
+    margin-top: 5px;
 }
+
 
 /* Fade In Animation */
 @keyframes fadeIn {
