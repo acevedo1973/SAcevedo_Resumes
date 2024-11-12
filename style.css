@@ -89,3 +89,29 @@ body {
         font-size: 1.5em;
     }
 }
+/* Education Item Styling */
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.education-item span {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.education-item p {
+    font-size: 1em;
+    color: #666;
+    padding-left: 10px;
+    border-left: 3px solid #007bff;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
