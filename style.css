@@ -23,20 +23,6 @@ body {
     animation: fadeIn 1.5s ease-in;
 }
 
-/* Header */
-header h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.contact-info {
-    text-align: center;
-    font-size: 1.1em;
-    color: #666;
-}
-
 /* Section Titles */
 .section-title {
     font-size: 1.8em;
@@ -46,25 +32,41 @@ header h1 {
     padding-bottom: 5px;
 }
 
-/* Job and Education Styling */
-.job, .education-list li {
-    margin-bottom: 15px;
-    padding-left: 10px;
-    border-left: 3px solid #007bff;
+/* Skills and Education List Styling */
+.skills-list, .education-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
 }
 
-/* Skills List */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
 }
 
+.skills-list li, .education-list li {
+    font-size: 1.1em;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: background 0.3s ease;
+}
+
 .skills-list li {
     background: #007bff;
     color: #fff;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 15px;
+}
+
+.skills-list li:hover {
+    background: #0056b3;
+}
+
+.education-list li {
+    padding-left: 10px;
+    border-left: 3px solid #007bff;
+    background: none;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* Fade In Animation */
