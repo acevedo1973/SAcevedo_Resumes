@@ -18,9 +18,9 @@ body {
     margin: 10px auto;
     padding: 10px;
     background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    animation: fadeIn 1.5s ease-in;
+    animation: fadeIn 2.0s ease-in;
 }
 
 /* Section Title */
@@ -100,7 +100,7 @@ body {
 }
 body {
     font-family: Arial, sans-serif;
-    background-image: url('leatherbackground.jpg');
+    background-image: url('images/leatherbackground.jpg'');
     background-size: cover; /* Ensures the image covers the entire screen */
     background-repeat: no-repeat; /* Prevents tiling */
     background-attachment: fixed; /* Keeps the image fixed while scrolling */
