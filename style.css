@@ -98,4 +98,14 @@ body {
     margin-top: 5px;
     padding-left: 15px;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('burlapbackground.jpg');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    color: #333;
+    line-height: 1.6;
+}
+
 
