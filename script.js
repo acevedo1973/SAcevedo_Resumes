@@ -6,9 +6,9 @@ window.addEventListener("load", () => {
 const skillsListItems = document.querySelectorAll('.skills-list li');
 skillsListItems.forEach(item => {
     item.addEventListener('mouseover', () => {
-        item.style.backgroundColor = '#0056b3';
+        item.style.backgroundColor = '#005000';
     });
     item.addEventListener('mouseout', () => {
-        item.style.backgroundColor = '#000000';
+        item.style.backgroundColor = '#fff';
     });
 });
