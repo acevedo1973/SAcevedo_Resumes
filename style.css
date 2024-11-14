@@ -39,11 +39,12 @@ body {
 /* Education Item Styling */
 .education-item {
     margin-bottom: 20px;
+    color: #000; /* Set text to black */
 }
 
 .education-item h3 {
     font-size: 1.2em;
-    color: #333;
+    color: #000; /* Set text to black */
     margin-bottom: 5px;
 }
 
@@ -51,22 +52,22 @@ body {
 .education-item p {
     display: block;
     font-size: 1em;
-    color: #666;
+    color: #000; /* Set text to black */
     padding-left: 10px;
     border-left: 3px solid #007bff;
     margin-top: 5px;
 }
 
-/* List Items Styling for Links */
+/* List Items Styling for Programming Languages Links */
 ul li a {
-    color: #000000; /* Set link text color to white */
+    color: #000; /* Set link text color to black */
     text-decoration: none; /* Remove underline for cleaner look */
-    transition: color 0.4s ease-in-out; /* Smooth transition for hover effect */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 /* Hover Effect for Links */
 ul li a:hover {
-    color: #f0f0f0; /* Slightly lighter color on hover for subtle effect */
+    color: #555; /* Slightly lighter black on hover for subtle effect */
 }
 
 /* Fade In Animation */
