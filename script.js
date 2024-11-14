@@ -9,6 +9,6 @@ skillsListItems.forEach(item => {
         item.style.backgroundColor = '#fff';
     });
     item.addEventListener('mouseout', () => {
-        item.style.backgroundColor = '#0050000';
+        item.style.backgroundColor = '#005000';
     });
 });
