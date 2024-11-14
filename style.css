@@ -60,14 +60,14 @@ body {
 
 /* List Items Styling for Programming Languages Links */
 ul li a {
-    color: #000; /* Set link text color to black */
-    text-decoration: none; /* Remove underline for cleaner look */
-    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+    color: #444; /* Softer dark gray */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 /* Hover Effect for Links */
 ul li a:hover {
-    color: #555; /* Slightly lighter black on hover for subtle effect */
+    color: #888; /* Medium-light gray for a subtle hover effect */
 }
 
 /* Fade In Animation */
