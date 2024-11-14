@@ -9,20 +9,20 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url('images/raindrops.jpg');
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #333;
     line-height: 1.6;
 }
 
-/* Container */
+/* Container with Opacity */
 .container {
     max-width: 1000px;
     margin: 10px auto;
-    padding: 10px;
-    background: #fff;
-    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     animation: fadeIn 4s ease-in;
 }
@@ -31,17 +31,41 @@ body {
 .section-title {
     font-size: 1.8em;
     color: #007bff;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
+    margin-bottom: 25px;
+    position: relative;
 }
 
-/* Education Item Styling */
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+}
+
+/* Subtle Section Divider */
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 30px 0;
+}
+
+/* Two-Column Layout */
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+/* Education and Job Styling */
 .education-item,
 .job,
 .summary-item {
     margin-bottom: 20px;
-    color: #000; /* Set text to black */
+    color: #000;
 }
 
 .education-item h3,
@@ -64,32 +88,31 @@ body {
 
 /* List Items Styling for Programming Languages Links */
 ul.skills-list li a {
-    color: #444; /* Softer dark gray */
+    color: #444;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
-/* Hover Effect for Links */
 ul.skills-list li a:hover {
-    color: #007bff; /* Light blue hover effect */
+    color: #007bff;
 }
 
 /* Fade In Animation */
 @keyframes fadeIn {
     from { 
         opacity: 0; 
-        transform: translateY(-20px); /* Adds slight movement from the top */
+        transform: translateY(-20px);
     }
     to { 
         opacity: 1; 
-        transform: translateY(0); /* Original position */
+        transform: translateY(0);
     }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        padding: 10px;
+        padding: 15px;
     }
 
     header h1 {
