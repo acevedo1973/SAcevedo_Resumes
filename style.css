@@ -18,13 +18,13 @@ body {
 
 /* Container */
 .container {
-    max-width: 2000px;
+    max-width: 1000px;
     margin: 10px auto;
-    padding: 5px;
+    padding: 10px;
     background: #fff;
     box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    animation: fadeIn 4.0s ease-in;
+    animation: fadeIn 4s ease-in;
 }
 
 /* Section Title */
@@ -37,14 +37,18 @@ body {
 }
 
 /* Education Item Styling */
-.education-item {
+.education-item,
+.job,
+.summary-item {
     margin-bottom: 20px;
     color: #000; /* Set text to black */
 }
 
-.education-item h3 {
+.education-item h3,
+.job h3,
+.summary-item h3 {
     font-size: 1.2em;
-    color: #000; /* Set text to black */
+    color: #000;
     margin-bottom: 5px;
 }
 
@@ -52,22 +56,22 @@ body {
 .education-item p {
     display: block;
     font-size: 1em;
-    color: #000; /* Set text to black */
+    color: #000;
     padding-left: 10px;
     border-left: 3px solid #007bff;
     margin-top: 5px;
 }
 
 /* List Items Styling for Programming Languages Links */
-ul li a {
+ul.skills-list li a {
     color: #444; /* Softer dark gray */
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 /* Hover Effect for Links */
-ul li a:hover {
-    color: #888; /* Medium-light gray for a subtle hover effect */
+ul.skills-list li a:hover {
+    color: #007bff; /* Light blue hover effect */
 }
 
 /* Fade In Animation */
@@ -96,6 +100,3 @@ ul li a:hover {
         font-size: 1.5em;
     }
 }
-
-
-
