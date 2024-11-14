@@ -11,7 +11,7 @@ body {
     background-image: url('images/leatherbackground.jpg');
     background-size: cover; /* Ensures the image covers the entire screen */
     background-repeat: no-repeat; /* Prevents tiling */
-    background-attachment: local; /* Keeps the image fixed while scrolling */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
     color: #333;
     line-height: 1.6;
 }
@@ -59,9 +59,9 @@ body {
 
 /* List Items Styling for Links */
 ul li a {
-    color: #fff; /* Set link text color to white */
+    color: #000000; /* Set link text color to white */
     text-decoration: none; /* Remove underline for cleaner look */
-    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+    transition: color 0.4s ease-in-out; /* Smooth transition for hover effect */
 }
 
 /* Hover Effect for Links */
