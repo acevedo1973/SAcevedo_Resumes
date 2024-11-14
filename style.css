@@ -51,31 +51,35 @@ body {
 .education-item p {
     display: block;
     font-size: 1em;
-    color:  #B2B2B2;
+    color: #666;
     padding-left: 10px;
     border-left: 3px solid #007bff;
     margin-top: 5px;
 }
-/* Fade In Animation - More Dramatic and Slower */
+
+/* List Items Styling for Links */
+ul li a {
+    color: #fff; /* Set link text color to white */
+    text-decoration: none; /* Remove underline for cleaner look */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Links */
+ul li a:hover {
+    color: #000000; /* Slightly lighter color on hover for subtle effect */
+}
+
+/* Fade In Animation */
 @keyframes fadeIn {
-    0% { 
+    from { 
         opacity: 0; 
-        transform: translateY(-20px); /* Adds a slight movement from top for a dramatic effect */
+        transform: translateY(-20px); /* Adds slight movement from the top */
     }
-    50% { 
-        opacity: 0.5; 
-    }
-    100% { 
+    to { 
         opacity: 1; 
-        transform: translateY(0); /* Brings it back to its original position */
+        transform: translateY(0); /* Original position */
     }
 }
-
-/* Applying the fade-in effect */
-.container {
-    animation: fadeIn 4s ease-in-out; /* Slower duration (4s) with easing effect */
-}
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
