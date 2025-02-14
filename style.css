@@ -123,3 +123,31 @@ ul.skills-list li a:hover {
         font-size: 1.5em;
     }
 }
+.education-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: space-between; /* Distributes evenly */
+}
+
+.education-item {
+    flex: 1 1 calc(33.33% - 20px); /* Adjusts to fit three per row */
+    background: #f9f9f9; /* Light background for contrast */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 250px; /* Prevents shrinking too much */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-item {
+        flex: 1 1 calc(50% - 20px); /* Two per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .education-item {
+        flex: 1 1 100%; /* Stacks items on very small screens */
+    }
+}
